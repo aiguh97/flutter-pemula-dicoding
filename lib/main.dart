@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pemula_dicoding/FirstScreen.dart';
 import 'package:flutter_pemula_dicoding/biggerText.dart';
 
 void main() {
@@ -14,16 +15,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: false, // Pastikan M2 dipakai agar AppBar ikut warna
-      ),
-      home: const Scaffold(
-        body: Center(
-          child: BiggerText(
-            text: "Hello world!",
-          ), // Ubah widget Heading ke PerubahanText
+        primarySwatch: Colors.blue,
+        useMaterial3: false, // Pakai Material 2 biar warna ikut primarySwatch
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
         ),
       ),
+      home: FirstScreen(),
     );
   }
 }
