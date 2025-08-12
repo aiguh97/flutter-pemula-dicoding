@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_pemula_dicoding/CustomButton.dart';
 import 'package:flutter_pemula_dicoding/CustomCenter.dart';
 import 'package:flutter_pemula_dicoding/CustomContainer.dart';
+import 'package:flutter_pemula_dicoding/CustomImageScreen.dart';
 import 'package:flutter_pemula_dicoding/CustomInputScreen.dart';
 import 'package:flutter_pemula_dicoding/CustomPadding.dart';
 import 'package:flutter_pemula_dicoding/CustomRowColumn.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: CustomInputScreen(),
+      home: CustomImageScreen(),
     );
   }
 }
