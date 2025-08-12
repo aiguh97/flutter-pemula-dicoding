@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_pemula_dicoding/CustomCenter.dart';
 import 'package:flutter_pemula_dicoding/CustomContainer.dart';
 import 'package:flutter_pemula_dicoding/CustomPadding.dart';
+import 'package:flutter_pemula_dicoding/CustomRowColumn.dart';
 import 'package:flutter_pemula_dicoding/FirstScreen.dart';
 import 'package:flutter_pemula_dicoding/biggerText.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: CustomCenterScreen(),
+      home: CustomRowColumn(),
     );
   }
 }
